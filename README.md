@@ -1,4 +1,9 @@
 # 🚀 Mi Viaje en C++: Proyectos Cpp en 42 🚀
+![Cpp Banner](https://img.shields.io/badge/Project-Cpp-blueviolet)
+![Language](https://img.shields.io/badge/Language-C-blue)
+![Norme](https://img.shields.io/badge/Norme-42-lightgreen)
+![Status](https://img.shields.io/badge/Status-In_progress-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgray)
 
 Este repositorio documenta y contiene una colección de proyectos y ejercicios realizados como parte de mi formación en la prestigiosa escuela 42. La serie de ejercicios se enfoca en la introducción y consolidación de los principios fundamentales de la Programación Orientada a Objetos (POO) en C++, con un énfasis estricto en el estándar **C++98** y las buenas prácticas de codificación impuestas por la escuela.
 
