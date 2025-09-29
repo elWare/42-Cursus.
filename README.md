@@ -1,5 +1,5 @@
 # 🚀 Mi Viaje en C++: Proyectos Cpp en 42 🚀
-![Cpp Banner](https://img.shields.io/badge/Project-Cpp-blueviolet)
+![Minishell Banner](https://img.shields.io/badge/Project-Cpp-blueviolet)
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![Norme](https://img.shields.io/badge/Norme-42-lightgreen)
 ![Status](https://img.shields.io/badge/Status-In_progress-orange)
