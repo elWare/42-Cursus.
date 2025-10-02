@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/26 11:27:24 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/26 13:31:14 by jumarque         ###   ########.fr       */
+/*   Created: 2025/09/29 09:33:37 by jumarque          #+#    #+#             */
+/*   Updated: 2025/09/29 10:08:52 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#include "Zombie.hpp"
 
-# include "contact.hpp"
-# include <limits>
-# include <iomanip>
-# include <sstream>
-
-class PhoneBook
+Zombie*	zombieHorde(int N, std::string name)
 {
-private:
-	Contact contacts[8];
-	int num_contacts;
-	int next_index;
-public:
-	PhoneBook();
-	~PhoneBook();
+	if (N <= 0)
+	{
+		std::cout << "Error: El número de zombis para la horda debe ser positivo."
+				<< std::endl;
+		return NULL;
+	}
 	
-	void	add_contact();
-	void	search_contact() const;
-};
-
-#endif
+	Zombie* horde;
+	
+	horde = new Zombie[N];
+	for (int i = 0; i < N; i++)
+	{
+		std::stringstream ss;
+		ss << name << "_" << i;
+		horde[i].setName(ss.str());
+	}
+	return horde;
+}
