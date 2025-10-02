@@ -2,7 +2,7 @@
 
 ## Visión General del Proyecto C++
 
-El proyecto de C++ en la Formación 42 (también conocido como "CPP Pool" o "Common Core C++") es un pilar fundamental en la currícula, diseñado para transformar a los estudiantes de programadores básicos a desarrolladores competentes en C++ y Programación Orientada a Objetos (POO). Este proyecto se compone de varios módulos (tradicionalmente Cpp 00 a Cpp 04, y luego Cpp 05 a Cpp 09 en el nivel "Born2BeRoot"), cada uno con un enfoque específico para construir una comprensión profunda y práctica del lenguaje.
+El proyecto de C++ en la Formación 42 (también conocido como "CPP Pool" o "Common Core C++") es un pilar fundamental en la currícula, diseñado para transformar a los estudiantes de programadores básicos a desarrolladores competentes en C++ y Programación Orientada a Objetos (POO). Este proyecto se compone de varios módulos (tradicionalmente Cpp 00 a Cpp 04), cada uno con un enfoque específico para construir una comprensión profunda y práctica del lenguaje.
 
 Este conjunto de módulos no solo se centra en la sintaxis de C++, sino también en la **filosofía de diseño de software**, la **gestión de recursos** y la **robustez del código**. A través de una serie de ejercicios desafiantes, los estudiantes aprenden a manejar la memoria, implementar patrones de diseño, y escribir código eficiente y modular. Es un proyecto de "Rango 4", lo que indica su importancia y el nivel de profundidad que requiere.
 
@@ -26,7 +26,7 @@ Este conjunto de módulos no solo se centra en la sintaxis de C++, sino también
 
 ### `Cpp modulo 04: Subtype Polimorfismo y Casting` 👻
 *   **Objetivo Principal**: Refinar la comprensión del polimorfismo por subtipo y explorar las técnicas de *casting* para la manipulación de tipos.
-*   **Conceptos Clave**: Upcasting, downcasting, `dynamic_cast`, `static_cast`, `reinterpret_cast`, `const_cast`, clases puramente virtuales, interfaces y la aplicación de los principios SOLID.
+*   **Conceptos Clave**: Upcasting, downcasting, `dynamic_cast`, `static_cast`, `reinterpret_cast`, `const_cast`, clases puramente virtuales, interfaces y la aplicación de los principios solidos.
 
 A lo largo de estos módulos, los estudiantes no solo adquieren habilidades técnicas en C++, sino que también desarrollan una mentalidad de **resolución de problemas**, **depuración** y **diseño de software** que es crucial en la industria.
 
