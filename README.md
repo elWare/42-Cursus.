@@ -1,4 +1,7 @@
 # Proyecto C++ en la Formación 42: Una Inmersión en la Programación Orientada a Objetos 🚀
+[![Status: En Desarrollo](https://img.shields.io/badge/Status-En%20Desarrollo-orange?style=for-the-badge&logoColor=white)](https://github.com/TuUsuarioDeGitHub/TuRepositorio)
+[![Lenguaje: C++](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://en.cppreference.com/w/)
+[![Escuela: 42](https://img.shields.io/badge/Escuela-42-black?style=for-the-badge&logo=42&logoColor=white)](https://www.42.fr/)
 
 ## Visión General del Proyecto C++
 
@@ -35,3 +38,4 @@ A lo largo de estos módulos, los estudiantes no solo adquieren habilidades téc
 *   **Nombre**: Juan Jesús Márquez
 *   **Perfil GitHub**: https://github.com/elWare
 *   **42 Login**: https://profile-v3.intra.42.fr/users/jumarque
+*   
