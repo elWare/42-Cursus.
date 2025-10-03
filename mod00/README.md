@@ -36,7 +36,7 @@ En 42, el desarrollo en C++ se rige por una serie de principios estrictos que bu
 
 ---
 
-## 🎯 Proyectos Implementados
+### 🎯 Proyectos Implementados
 
 A continuación, se detallan los proyectos de C++ que he desarrollado, cada uno ubicado en su propio subdirectorio (`ex00/`, `ex01/`, `ex02/`).
 
