@@ -1,0 +1,58 @@
+# Makefile para el proyecto C++ Módulo 02 - ex02: Fixed (Sobrecarga Completa)
+
+# (Contenido idéntico al Makefile del ex00/ex01)
+
+# -------------------------------------------------------------------------- #
+# VARIABLES
+# -------------------------------------------------------------------------- #
+
+# Nombre del ejecutable final
+NAME = fixed
+
+# Compilador C++
+CXX = g++
+
+# Banderas del compilador (obligatorias en 42)
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98 -g
+
+# Archivos fuente (.cpp) de tu proyecto
+SRCS = Fixed.cpp main.cpp
+
+# Archivos objeto (.o)
+OBJS = $(SRCS:.cpp=.o)
+
+# Comando para eliminar archivos
+RM = rm -f
+
+# Colores para la salida del Makefile (opcional)
+YELLOW='\033[0;33m'
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+# -------------------------------------------------------------------------- #
+# REGLAS (Targets)
+# -------------------------------------------------------------------------- #
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	@echo -e "${GREEN}Enlazando $(NAME) 🔗 ${NC}"
+	$(CXX) $(OBJS) $(CXXFLAGS) -o $(NAME)
+	@echo -e "${GREEN}$(NAME) está listo ✅${NC}"
+
+%.o: %.cpp
+	@echo -e "${YELLOW}Compilando $<...${NC}"
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	@echo -e "${RED}Limpiando archivos objeto 🧹 ${NC}"
+	$(RM) $(OBJS)
+
+fclean: clean
+	@echo -e "${RED}Limpiando ejecutable $(NAME) 🗑️ ${NC}"
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
