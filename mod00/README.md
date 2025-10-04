@@ -8,14 +8,14 @@ Cada proyecto está diseñado para desafiar y profundizar la comprensión de con
 
 ## 📚 Tabla de Contenidos
 
-1.  [Filosofía de 42 C++](#filosofía-de-42-c)
-2.  [Proyectos Implementados](#proyectos-implementados)
+1.  [Filosofía de 42 C++](#-filosofía-de-42-c)
+2.  [Proyectos Implementados](#-proyectos-implementados)
     *   [Módulo 00, ex00: megaphone](#módulo-00-ex00-megaphone)
     *   [Módulo 00, ex01: My Awesome PhoneBook](#módulo-0001-ex01-my-awesome-phonebook)
-    *   [Módulo 00, ex02: Account Class](#módulo-0001-ex02-account-class)
-3.  [Compilación y Ejecución](#compilación-y-ejecución)
-4.  [Herramientas de Testing](#herramientas-de-testing)
-5.  [Autor](#autor)
+    *   [Módulo 00, ex02: Account Class](#módulo-0002-ex02-account-class)
+3.  [Compilación y Ejecución](#️-compilación-y-ejecución)
+4.  [Herramientas de Testing](#-herramientas-de-testing)
+5.  [Autor](#️-autor)
 
 ---
 
@@ -36,7 +36,7 @@ En 42, el desarrollo en C++ se rige por una serie de principios estrictos que bu
 
 ---
 
-## 🎯 Proyectos Implementados
+### 🎯 Proyectos Implementados
 
 A continuación, se detallan los proyectos de C++ que he desarrollado, cada uno ubicado en su propio subdirectorio (`ex00/`, `ex01/`, `ex02/`).
 
