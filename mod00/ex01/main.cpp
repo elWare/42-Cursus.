@@ -6,12 +6,12 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:20:01 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/26 17:31:14 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/06 12:43:25 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "contact.hpp"
-#include "phonebook.hpp"
+#include "Contact.hpp"
+#include "PhoneBook.hpp"
 
 int	main()
 {

@@ -1,10 +1,12 @@
-# ---- MAKEFILE ----------------------------------------------------------------
+# Makefile para el proyecto C++ Módulo 03 - ex00: ClapTrap
 
-NAME = bsp
+# -------------------------------------------------------------------------- #
+# VARIABLES
+# -------------------------------------------------------------------------- #
 
-TITLE = "🔥 [CPP_02] [EX03] BSP - Binary Space Partitioning "
-
-SRC = bsp.cpp Fixed.cpp main.cpp Point.cpp
+NAME = claptrap
+TITLE = "🔥 [CPP_03] [EX00] Aaaaand... OPEN! "
+SRC = ClapTrap.cpp main.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++ 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g # Incluye -g para depuración

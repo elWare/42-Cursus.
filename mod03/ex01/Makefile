@@ -1,10 +1,10 @@
-# ---- MAKEFILE ----------------------------------------------------------------
+NAME = scavtrap
 
-NAME = bsp
+TITLE = "🔥 [CPP_03] [EX01] Serena, my love! "
 
-TITLE = "🔥 [CPP_02] [EX03] BSP - Binary Space Partitioning "
-
-SRC = bsp.cpp Fixed.cpp main.cpp Point.cpp
+SRC = main.cpp \
+        ClapTrap.cpp \
+        ScavTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++ 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g # Incluye -g para depuración
