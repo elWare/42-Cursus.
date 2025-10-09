@@ -38,7 +38,7 @@ ClapTrap Bobby intenta atacar a Nemo pero, no tiene energía suficiente.
 
 * * * * * * * Bobby's show ends  * * * * * * *
 
-ClapTrap destructor llamado y destruido Bobby
+ClapTrap destructor llamado y destruido Bobby.
 EOF
 
 # --- Funciones Auxiliares ---

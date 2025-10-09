@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 11:14:17 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/06 17:31:03 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:36:11 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ ClapTrap::ClapTrap(void)
 	this->_energyPoints = 10;
 	this->_hitPoints = 10;
 	this->_name = "Default";
-	cout << "ClapTrap constructor por defecto llamado y creado: " << this->_name << endl;
+	cout << "ClapTrap constructor por defecto llamado y creado: "
+		<< this->_name << "." << endl;
 }
 
 ClapTrap::ClapTrap(const std::string& name)
@@ -37,13 +38,15 @@ ClapTrap::ClapTrap(const std::string& name)
 
 ClapTrap::ClapTrap(const ClapTrap& newClapTrap)
 {
-	cout << "ClapTrap constructor de copia llamado y copiado el ClapTrap: " << newClapTrap.getName() << endl;
+	cout << "ClapTrap constructor de copia llamado y copiado el ClapTrap: "
+	<< newClapTrap.getName() << "." << endl;
 	*this = newClapTrap;
 }
 
 ClapTrap::~ClapTrap()
 {
-	cout << "ClapTrap destructor llamado y destruido " << this->getName() << endl;
+	cout << "ClapTrap destructor llamado y destruido "
+		<< this->getName() << "." << endl;
 }
 
 ClapTrap&	ClapTrap::operator=(const ClapTrap& newClapTrap)
