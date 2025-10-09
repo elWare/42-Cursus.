@@ -1,9 +1,3 @@
-¡Claro! Entiendo perfectamente. Quieres un `README.md` que sirva como una visión general de tu progreso a través del Cursus de 42, mostrando que este repositorio es una recopilación de tus proyectos.
-
-Aquí tienes un `README.md` general que puedes usar como la página principal de tu repositorio, explicando su propósito y lo que los visitantes pueden esperar encontrar:
-
----
-
 # 🚀 Mi Viaje en el Cursus de 42 - Progreso y Proyectos
 
 ¡Bienvenido/a a mi repositorio de 42 Cursus! Este es un espacio dedicado a documentar mi aprendizaje y progreso a través del programa intensivo de programación en C de la escuela 42. Aquí encontrarás una colección de todos los proyectos que he completado, desde los fundamentos iniciales hasta desafíos más avanzados.
