@@ -1,9 +1,3 @@
-¡Excelente! Con estos nuevos datos, puedo hacer que el `README.md` sea aún más preciso y útil, basándome directamente en tus archivos `libft.h` [1] y `Makefile` [2].
-
-Aquí tienes el `README.md` actualizado, con los detalles específicos de tu implementación y la forma en que se compila tu proyecto:
-
----
-
 # 📚 Libft - La Biblioteca Fundacional de 42
 
 Este repositorio contiene mi implementación personal de la **Libft**, la primera gran librería de funciones en C que se construye durante el currículo de la escuela 42. El objetivo de este proyecto es recrear desde cero un conjunto de funciones estándar de la librería de C, así como añadir algunas funciones útiles adicionales, con el fin de solidificar la comprensión del lenguaje C y la manipulación de memoria.
