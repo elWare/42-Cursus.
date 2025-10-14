@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 18:15:44 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/14 17:53:42 by jumarque         ###   ########.fr       */
+/*   Created: 2025/10/14 17:19:17 by jumarque          #+#    #+#             */
+/*   Updated: 2025/10/14 17:24:46 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "Animal.hpp"
-#include "Brain.hpp"
+#include <iostream>
+#include <string>
 
-class Dog : public Animal
+class Brain
 {
-
 	public:
-		Dog();
-		Dog(const Dog& src);
-		virtual ~Dog();
+		Brain();
+		Brain(const Brain& src);
+		~Brain();
 
-		Animal& operator=(const Animal& src);
+		Brain& operator=(const Brain& src);
+		
+		const std::string& getIdea(unsigned int index) const;
+		void addIdea(const std::string& idea);
 
-		void makeSound() const;
-		Brain *getBrain() const;
-
-	private:
-		Brain *brain;
+		private:
+			std::string ideas[100];
+			unsigned int count;
 };

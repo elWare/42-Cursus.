@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 18:15:44 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/09 18:19:36 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/14 17:50:29 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@ class Cat : public Animal
 		Cat(const Cat& newCat);
 		virtual ~Cat();
 
-		Cat&	operator=(const Cat& otherCat);
+		Animal& operator=(const Animal& src);
+
 		void	makeSound() const;
+		Brain	*getBrain() const;
+	
+	private:
+		Brain	*brain;
 };
