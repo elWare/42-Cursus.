@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:01:29 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/14 18:08:39 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/15 14:31:59 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int main()
 		specificCat->getBrain()->addIdea("Ignorar a los humanos.");
 		cout << "Primera idea del gato: " << specificCat->getBrain()->getIdea(0) << endl;
 	}
+	
 	cout << "------------------------------------------------------------------" << endl << endl;
 
 	cout << "--- Test 4: Demostración de Copia Profunda (Deep Copy) ---" << endl;
@@ -75,19 +76,7 @@ int main()
 
 	cout << "------------------------------------------------------------------" << endl << endl;
 
-	cout << "--- Test 5: Demostración del Operador de Asignación (Deep Copy) ---" << endl;
-	Dog assignedDog; // Perro de destino para la asignación
-	assignedDog.getBrain()->addIdea("Soy el perro asignado, con mi idea original.");
-	cout << "Assigned Dog primera idea (antes de asignacion): " << assignedDog.getBrain()->getIdea(0) << endl;
-
-	assignedDog = originalDog; // Operador de asignación (Deep Copy)
-	cout << "Assigned Dog primera idea (despues de asignacion): " << assignedDog.getBrain()->getIdea(0) << endl;
-	assignedDog.getBrain()->addIdea("Ahora soy como el original.");
-	cout << "Original Dog primera idea (despues de asignacion a otro): " << originalDog.getBrain()->getIdea(0) << endl;
-	cout << "Assigned Dog nueva idea: " << assignedDog.getBrain()->getIdea(1) << endl; // Debería tener las ideas del original + la nueva
-	cout << "------------------------------------------------------------------" << endl << endl;
-
-	cout << "--- Test 6: Array de Animales (polimorfismo y limpieza) ---" << endl;
+	cout << "--- Test 5: Array de Animales (polimorfismo y limpieza) ---" << endl;
 	Animal* zoo[4];
 	// zoo[0] = new Animal(); // Esto no compilaría
 	zoo[0] = new Dog();
@@ -106,7 +95,7 @@ int main()
 	cout << "------------------------------------------------------------------" << endl << endl;
 
 
-	cout << "--- Test 7: Limpiando memoria de myDog y myCat ---" << endl;
+	cout << "--- Test 6: Limpiando memoria de myDog y myCat ---" << endl;
 	delete myDog; // Llama a ~Dog() y luego ~Animal(), liberando el Brain
 	delete myCat; // Llama a ~Cat() y luego ~Animal(), liberando el Brain
 	cout << "myDog y myCat eliminados correctamente." << endl;

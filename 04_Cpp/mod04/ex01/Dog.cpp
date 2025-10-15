@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 18:19:47 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/14 17:56:08 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/15 14:30:46 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,30 +17,36 @@ using std::endl;
 
 Dog::Dog() : Animal("Dog")
 {
-	cout << this->_type << " default constructor called 👨‍💻" << endl;
+	cout << this->_type << " default constructor 🐶 called 👨‍💻" << endl;
 	this->brain = new Brain();
 }
 
 Dog::Dog(const Dog& src) : Animal(src)
 {
-	cout << this->_type << " copy constructor called 🙇" << endl;
-	this->brain = new Brain(*src.brain);
+		cout << this->_type << " copy constructor 🐶 called 🙇" << endl;
+		this->brain = new Brain(*(src.brain));
 }
 
 Dog::~Dog()
 {
-	cout << this->_type << " destructor called 🔫" << endl;
-	delete this->brain;
+	cout << this->_type << " destructor 🐶 called 🧨" << endl;
+	if (this->brain != NULL)
+	{
+		delete this->brain;
+		this->brain = NULL;
+	}
 }
 
 Animal& Dog::operator=(const Animal& src)
 {
-	const Dog *srcOther;
-	srcOther = dynamic_cast < const Dog *> (&src);
+	const Animal *srcOther;
+	srcOther = &src;
 	if (srcOther)
 	{
+		cout << "Assigning from another dog 🐶" << endl;
+		delete this->brain;
 		this->_type = srcOther->getType();
-		*this->brain = *srcOther->brain;
+		this->brain = new Brain(*(srcOther->getBrain()));
 	}
 	return *this;
 }

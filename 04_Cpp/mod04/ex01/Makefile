@@ -49,11 +49,15 @@ fclean: clean
 	@echo "Executable and object files cleaned ✅"
 
 re: fclean all
-	@echo "Rebuilding $(TITLE) ♻️"
+	@echo Rebuilding $(TITLE) ♻️
 
 run: $(NAME)
-	@echo "Running $(NAME) ▶️"
+	@echo Running $(NAME) ▶️
 	@./$(NAME)
 	@echo "Execution finished."
 
-.PHONY: all clean fclean re run
+valgrind: $(NAME)
+	@echo -e "\n${YELLOW}--- Ejecutando Valgrind para $(NAME) ---${NC}"
+	valgrind --track-fds=yes --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./"$(NAME)"
+
+.PHONY: all clean fclean re run valgrind

@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:19:17 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/14 17:24:46 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/15 11:53:34 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Brain
 		const std::string& getIdea(unsigned int index) const;
 		void addIdea(const std::string& idea);
 
-		private:
-			std::string ideas[100];
-			unsigned int count;
+	private:
+		std::string ideas[100];
+		unsigned int count;
 };
