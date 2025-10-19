@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 12:42:25 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/19 14:11:17 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/19 18:42:11 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ MateriaSource&	MateriaSource::operator=(const MateriaSource &src)
 		else
 			this->_materias[i] = NULL;
 	}
+	return *this;
 }
 
 void	MateriaSource::printMaterias() const
@@ -86,9 +87,8 @@ void MateriaSource::learnMateria(AMateria *m)
 			return ;
 		}
 	}
-
 	this->_materias[this->_materiasSize] = m;
-	this-_materiasSize++;
+	this->_materiasSize++;
 	cout << "Materia " << m->getType() << " learned successfully." << endl;
 }
 
