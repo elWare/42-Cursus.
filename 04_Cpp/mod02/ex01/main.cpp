@@ -6,12 +6,11 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 17:49:19 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/03 12:25:26 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:13:30 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-#include <iostream>
 
 int main() 
 {

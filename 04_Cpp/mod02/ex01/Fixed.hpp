@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 11:56:05 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/03 12:16:18 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:12:11 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <iostream>
 # include <cmath>
-# include <cstdlib>
 
 class	Fixed
 {

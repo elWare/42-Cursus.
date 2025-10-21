@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 17:49:19 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/03 12:08:23 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:39:26 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 #include <iostream>
 
 int main() {
-	Fixed i;
-	Fixed j(i);
-	Fixed k;
+	Fixed a;
+	Fixed b(a);
+	Fixed c;
 
-	k = j;
+	c = b;
 
-	std::cout << i.getRawBits() << std::endl;
-	std::cout << j.getRawBits() << std::endl;
-	std::cout << k.getRawBits() << std::endl;
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
 
 	return 0;
 }
