@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:43:56 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/02 08:54:10 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:47:38 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Harl::Harl()
 
 Harl::~Harl()
 {
-	//std::cout << "[Harl] Destructor called" << std::endl;
+	std::cout << "[Harl] Destructor called" << std::endl;
 }
 
 void Harl::debug(void)

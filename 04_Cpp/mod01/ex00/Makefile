@@ -54,6 +54,13 @@ fclean: clean
 # Regla 're': "Rehacer" el proyecto.
 re: fclean all
 
+# Regla para ejecutar el programa (asegurándose de que esté construido)
+run: $(NAME)
+	@echo "Running $(NAME) ▶️"
+	@./$(NAME)
+	@echo "Execution finished."
+	@$(RM) $(OBJS)
+
 # -------------------------------------------------------------------------- #
 # REGLA PARA VALGRIND (¡NUEVA!)
 # -------------------------------------------------------------------------- #
@@ -71,9 +78,9 @@ valgrind: $(NAME)
 	# --suppressions=valgrind.supp : Opcional, para suprimir errores conocidos o que no son de tu código.
 	# --quiet : Opcional, para una salida más concisa si no hay errores.
 	valgrind --track-fds=yes --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./"$(NAME)"
+	@$(RM) $(OBJS)
 
 # Indicador de que estas reglas no son archivos reales (pseudo-objetivos).
-.PHONY: all clean fclean re valgrind
 
 # Colores para la salida del Makefile (opcional, pero útil)
 # Se definen aquí para que puedan ser usadas en la regla valgrind

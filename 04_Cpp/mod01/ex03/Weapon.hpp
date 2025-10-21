@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:18:07 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/29 18:26:30 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:18:17 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ class Weapon
 		~Weapon(void);
 		
 		const std::string& getType(void);
-		void setType(std::string type);
+		void setType(std::string nType);
 	private:
-		std::string _type;
+		std::string type;
 };
 
 #endif

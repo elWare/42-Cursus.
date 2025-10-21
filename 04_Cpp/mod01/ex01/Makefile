@@ -71,6 +71,7 @@ valgrind: $(NAME)
 	# --suppressions=valgrind.supp : Opcional, para suprimir errores conocidos o que no son de tu código.
 	# --quiet : Opcional, para una salida más concisa si no hay errores.
 	valgrind --track-fds=yes --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./"$(NAME)"
+	@$(RM) $(OBJS)
 
 # Indicador de que estas reglas no son archivos reales (pseudo-objetivos).
 .PHONY: all clean fclean re valgrind

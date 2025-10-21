@@ -70,6 +70,12 @@ fclean: clean
 # Muy útil para asegurar una compilación limpia después de muchos cambios.
 re: fclean all
 
-# Indicador de que estas reglas no son archivos reales (pseudo-objetivos).
-# Esto evita que make intente crear archivos con estos nombres si existen.
-.PHONY: all clean fclean re
+# -------------------------------------------------------------------------- #
+# REGLA PARA VALGRIND
+# -------------------------------------------------------------------------- #
+
+valgrind: $(NAME)
+	@echo -e "\n${YELLOW}--- Ejecutando Valgrind para $(NAME) ---${NC}"
+	valgrind --track-fds=yes --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./"$(NAME)"
+
+.PHONY: all clean fclean re valgrind

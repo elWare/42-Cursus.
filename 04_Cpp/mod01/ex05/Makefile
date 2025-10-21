@@ -53,4 +53,12 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+# -------------------------------------------------------------------------- #
+# REGLA PARA VALGRIND
+# -------------------------------------------------------------------------- #
+
+valgrind: $(NAME)
+	@echo -e "\n${YELLOW}--- Ejecutando Valgrind para $(NAME) ---${NC}"
+	valgrind --track-fds=yes --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./"$(NAME)"
+
+.PHONY: all clean fclean re valgrind

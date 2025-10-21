@@ -6,35 +6,35 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 11:46:44 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/30 15:17:11 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:21:04 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : _name(name), _weapon(NULL)
+HumanB::HumanB(std::string nName) : name(nName), weapon(NULL)
 {
-		std::cout << "HumanB <"<< this->_name
+		std::cout << "HumanB <"<< this->name
 				<< "> ha sido creado." << std::endl;
 }
 
 HumanB::~HumanB(void)
 {
-	std::cout << "HumanB <" << this->_name << "> ha sido destruido." << std::endl;
+	std::cout << "HumanB <" << this->name << "> ha sido destruido." << std::endl;
 }
 
 void HumanB::attack(void)
 {
-	if (this->_weapon == NULL)
-		std::cout << this->_name << " intenta atacar pero no tiene arma." << std::endl;
+	if (this->weapon == NULL)
+		std::cout << this->name << " intenta atacar pero no tiene arma." << std::endl;
 	else
-		std::cout << this->_name << " ataca con su arma " << this->_weapon->getType() 
+		std::cout << this->name << " ataca con su arma " << this->weapon->getType() 
 				<< "." << std::endl;
 }
 
-void HumanB::setWeapon(Weapon& weapon)
+void HumanB::setWeapon(Weapon& nWeapon)
 {
-	this->_weapon = &weapon;
-	std::cout << "HumanB <"<< this->_name << "> ahora empuñará el arma <" << this->_weapon->getType()
+	this->weapon = &nWeapon;
+	std::cout << "HumanB <"<< this->name << "> ahora empuñará el arma <" << this->weapon->getType()
 		<< ">." << std::endl;
 }

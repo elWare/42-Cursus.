@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 18:33:14 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/02 09:10:35 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:58:55 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <iostream>
 # include <string>
 
-# define ARGC_ERR "Invalid arguments\nlevels: DEBUG, INFO, WARNING, ERROR"
+# define ARGC_ERR "[ Probably complaining about insignificant problems ]"
 # define USAGE "Usage: ./harlFilter <level>\nlevels: DEBUG, INFO, WARNING, ERROR"
 
 class Harl
