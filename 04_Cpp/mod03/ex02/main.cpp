@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 12:24:04 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/09 12:24:54 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:39:56 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,11 @@ int main()
 	cout << endl;
 
 	Damien.takeDamage(6);					// "Damien" recibe 6 puntos de daño [4]
+	cout << "\n\tEnergy points : " << Damien.getEnergyPoints() << endl;
 	Damien.takeDamage(66);					// "Damien" recibe 66 puntos de daño [4]
+	cout << "\n\tEnergy points : " << Damien.getEnergyPoints() << endl;
 	Damien.beRepaired(666);					// "Damien" es reparado por 666 puntos [4]
+	cout << "\n\tEnergy points : " << Damien.getEnergyPoints() << endl;
 	Damien.highFivesGuys();					// "Damien" dice: Give me five! [4]
 	cout << endl;
 

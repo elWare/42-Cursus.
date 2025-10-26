@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 13:29:29 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/09 13:39:10 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:45:19 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ DiamondTrap::DiamondTrap(void) : ClapTrap(), FragTrap(), ScavTrap()
 }
 
 DiamondTrap::DiamondTrap(const std::string& name)
-	: ClapTrap(name + "_clone"), FragTrap(name), ScavTrap(name), _name(name)
+	: ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name), _name(name)
 {
 	std::cout << "DiamondTrap " << name << " ha sido creado." << std::endl;
 	this-> _attackDemage = 30;

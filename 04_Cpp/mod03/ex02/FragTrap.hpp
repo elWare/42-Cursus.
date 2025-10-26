@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 12:05:12 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/09 12:18:11 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/25 18:12:41 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class FragTrap : public ClapTrap
 {
 	public:
-		FragTrap(/* args */);
+		FragTrap();
 		FragTrap(const std::string& name);
 		FragTrap(const FragTrap& newFragTrap);
 		~FragTrap();
