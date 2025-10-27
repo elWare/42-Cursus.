@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:33:37 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/14 11:39:40 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/27 09:10:35 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,13 @@ class WrongAnimal
 {
 	protected:
 		std::string _type;
-		WrongAnimal(const std::string& type);
+
 
 	public:
 		WrongAnimal();
+		WrongAnimal(const std::string& type);
 		WrongAnimal(const WrongAnimal& src);
-		virtual ~WrongAnimal();
+		~WrongAnimal();
 
 		WrongAnimal& operator=(const WrongAnimal& src);
 		const std::string& getType() const;

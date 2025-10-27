@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:49:07 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/09 18:11:56 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/27 08:51:21 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,12 @@
 
 class Animal
 {
+	protected:
+		std::string _type;
+		
 	public:
 		Animal();
+		Animal(const std::string& type);
 		Animal(const Animal& newAnimal);
 		virtual ~Animal();
 		
@@ -27,7 +31,4 @@ class Animal
 		void	setType(const std::string& type);
 		virtual void	makeSound() const;
 
-	protected:
-		std::string _type;
-		Animal(const std::string& type);
 };

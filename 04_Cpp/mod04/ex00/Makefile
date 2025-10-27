@@ -32,8 +32,6 @@ $(NAME): $(OBJ)
 
 # .PHONY declara objetivos que no corresponden a nombres de archivos reales.
 # Esto asegura que Make siempre ejecutará la regla aunque exista un archivo con ese nombre.
-.PHONY: all clean fclean re run
-
 # Regla para limpiar archivos objeto
 clean:
 	@echo "Cleaning object files 🧹"
@@ -50,12 +48,18 @@ fclean: clean
 re: fclean all
 	@echo "Rebuilding $(TITLE) ♻️"
 
+valgrind: $(NAME)
+	@echo -e "\n${YELLOW}--- Ejecutando Valgrind para $(NAME) ---${NC}"
+	valgrind --track-fds=yes --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./$(NAME)
+
+
 # Regla para ejecutar el programa (asegurándose de que esté construido)
 run: $(NAME)
 	@echo "Running $(NAME) ▶️"
 	@./$(NAME)
 	@echo "Execution finished."
 
+.PHONY: all clean fclean re valgrind run
 # ---- colors ------------------------------------------------------------------
 
 DEF_COLOR = \033[0m

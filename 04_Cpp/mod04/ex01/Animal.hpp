@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:49:07 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/15 13:00:41 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/27 09:55:57 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class Animal
 {
 	public:
 		Animal();
+		Animal(const std::string& type);
 		Animal(const Animal& newAnimal);
 		virtual ~Animal();
 		
@@ -32,5 +33,4 @@ class Animal
 
 	protected:
 		std::string _type;
-		Animal(const std::string& type);
 };
