@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   contact.hpp                                        :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 12:35:36 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/26 14:15:01 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/30 18:25:02 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <iostream>
 # include <string>
 # include <cctype>
-# include <algorithm>
 
 class Contact{
 	private:
@@ -25,7 +24,7 @@ class Contact{
 		std::string _nickName;
 		std::string _tlfNumber;
 		std::string _darkestSecret;
-	// ... mas lo que falte
+
 	public:
 		Contact();
 		~Contact();

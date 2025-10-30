@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 11:27:24 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/29 08:38:09 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/30 18:27:23 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <limits>
 # include <iomanip>
 # include <sstream>
+# include <cstdlib>
 
 class PhoneBook
 {

@@ -6,14 +6,13 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 17:16:21 by jumarque          #+#    #+#             */
-/*   Updated: 2025/09/26 17:29:43 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/30 18:23:10 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <cctype>
 #include <string>
-#include <algorithm>
 
 std::string trim(const std::string& str) {
 

@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:20:01 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/06 12:43:25 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/30 18:26:17 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,13 @@ int	main()
 			std::cout << "\nEOF detectado. Saliendo del programa." << std::endl;
 			break;
 		}
-		std::transform(command.begin(), command.end(), command.begin(), ::toupper);
-		command.erase(std::remove_if(command.begin(), command.end(), ::isspace), command.end());
-
 		if (command == "ADD")
 		{
 			myPhoneBook.add_contact();
 		}
 		else if (command == "SEARCH")
 		{
-			myPhoneBook.search_contact(); // Llama al método de búsqueda (pendiente) [1]
+			myPhoneBook.search_contact();
 		}
 		else if (command == "EXIT")
 		{
