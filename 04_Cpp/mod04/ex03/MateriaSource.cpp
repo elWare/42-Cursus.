@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 12:42:25 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/19 18:42:11 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/31 12:11:56 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ MateriaSource::~MateriaSource()
 			this->_materias[i] = NULL;
 		}
 	}
-	std::cout << "MateriaSource destructor called 💣" << endl;
+	//std::cout << "MateriaSource destructor called 💣" << endl;
 }
 
 MateriaSource&	MateriaSource::operator=(const MateriaSource &src)
@@ -65,9 +65,9 @@ void	MateriaSource::printMaterias() const
 	}
 }
 
-void MateriaSource::learnMateria(AMateria *m)
+void MateriaSource::learnMateria(AMateria* m)
 {
-	if (!m)
+ 	if (m == NULL)
 	{
 		cout << "Cannot learn a NULL materia." << endl;
 		return ;
@@ -80,7 +80,7 @@ void MateriaSource::learnMateria(AMateria *m)
 	}
 	for (int i = 0; i < 4; i++)
 	{
-		if (this->_materias[i]->getType() == m->getType())
+		if (this->_materias[i] && (this->_materias[i]->getType() == m->getType()))
 		{
 			cout << "Materia of type " << m->getType() << " already learned." << endl;
 			delete m;
@@ -89,7 +89,7 @@ void MateriaSource::learnMateria(AMateria *m)
 	}
 	this->_materias[this->_materiasSize] = m;
 	this->_materiasSize++;
-	cout << "Materia " << m->getType() << " learned successfully." << endl;
+	//cout << "Materia " << m->getType() << " learned successfully." << endl;
 }
 
 AMateria *MateriaSource::createMateria(const std::string& type)
@@ -98,7 +98,7 @@ AMateria *MateriaSource::createMateria(const std::string& type)
 	{
 		if (this->_materias[i] && this->_materias[i]->getType() == type)
 		{
-			cout << "Creating a clone of " << type << " materia." << endl;
+			//cout << "Creating a clone of " << type << " materia." << endl;
 			return this->_materias[i]->clone();
 		}
 	}

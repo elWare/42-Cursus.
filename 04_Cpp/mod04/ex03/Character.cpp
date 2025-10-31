@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:17:10 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/19 14:46:00 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/10/31 12:12:49 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ using std::endl;
 
 Character::Character(const std::string& name) : _name(name), _inventarySize(0)
 {
-	cout << "Character " << this->_name << " default constructor called." << endl;
+	//cout << "Character " << this->_name << " default constructor called." << endl;
 	for (int i = 0; i < 4; i++)
 		this->_inventary[i] = NULL;
 }
 
 Character::Character(const Character& src) : _name(src._name), _inventarySize(src._inventarySize)
 {
-	cout << "Character " << this->_name << " copy constructo called." << std::endl;
+	//cout << "Character " << this->_name << " copy constructo called." << std::endl;
 	for (int i = 0; i < 4; i++)
 		this->_inventary[i] = NULL;
 	*this = src;
@@ -47,13 +47,13 @@ Character& Character::operator=(const Character& src)
 		}
 	}
 	this->_inventarySize = src._inventarySize;
-	cout << "Character " << this->_name << " assignment operator called." << endl;
+	//cout << "Character " << this->_name << " assignment operator called." << endl;
 	return *this;
 }
 
 Character::~Character()
 {
-	cout << "Character " << this->_name << " destructor called." << endl;
+	//cout << "Character " << this->_name << " destructor called." << endl;
 	for (int i = 0; i < 4; i++)
 	{
 		if (this->_inventary[i])
@@ -86,7 +86,7 @@ void Character::equip(AMateria* m) {
 		{
 			this->_inventary[i] = m;
 			this->_inventarySize++;
-			cout << "Character " << this->_name << " equipped " << m->getType() << " in slot " << i << "." << endl;
+			//cout << "Character " << this->_name << " equipped " << m->getType() << " in slot " << i << "." << endl;
 			return;
 		}
 	}
