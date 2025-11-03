@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 18:39:36 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/31 12:20:23 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/11/03 13:29:43 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,16 @@ int	main() {
 	me->equip(tmp);
 	tmp = src->createMateria("iron");
 	me->equip(tmp);
-	
 
 	ICharacter* bob = new Character("bob");
 
 	me->use(0, *bob);
 	me->use(1, *bob);
-
+	tmp = me->getMateria(0);
+	me->unequip(0);
+	delete tmp;
+	
+	
 	delete bob;
 	delete me;
 	delete src;

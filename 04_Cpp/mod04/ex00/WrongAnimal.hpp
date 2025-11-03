@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:33:37 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/27 09:10:35 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/11/03 11:32:50 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ class WrongAnimal
 {
 	protected:
 		std::string _type;
-
 
 	public:
 		WrongAnimal();

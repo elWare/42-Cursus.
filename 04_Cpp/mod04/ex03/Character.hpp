@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:03:04 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/19 14:36:06 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/11/03 13:18:34 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Character : public ICharacter
 		void	equip(AMateria* m);
 		void	unequip(int idx);
 		void	use(int idx, ICharacter& target);
+		virtual AMateria*	getMateria(const int idx);
 
 	private:
 		std::string _name;

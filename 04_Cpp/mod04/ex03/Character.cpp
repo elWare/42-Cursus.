@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:17:10 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/31 12:12:49 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/11/03 13:19:47 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,6 @@ void Character::equip(AMateria* m) {
 		{
 			this->_inventary[i] = m;
 			this->_inventarySize++;
-			//cout << "Character " << this->_name << " equipped " << m->getType() << " in slot " << i << "." << endl;
 			return;
 		}
 	}
@@ -114,3 +113,11 @@ void Character::use(int idx, ICharacter& target) {
 	}
 	this->_inventary[idx]->use(target);
 }
+
+AMateria*	Character::getMateria(const int idx)
+{
+	if (idx >= 0 && idx < 4 && this->_inventary[idx] != NULL)
+		return (this->_inventary[idx]);
+	return NULL;
+}
+

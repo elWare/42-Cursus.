@@ -6,7 +6,7 @@
 /*   By: jumarque <jumarque@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 12:42:25 by jumarque          #+#    #+#             */
-/*   Updated: 2025/10/31 12:11:56 by jumarque         ###   ########.fr       */
+/*   Updated: 2025/11/03 13:18:51 by jumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void MateriaSource::learnMateria(AMateria* m)
 
 AMateria *MateriaSource::createMateria(const std::string& type)
 {
-	for (int i = 0; i < this->_materiasSize; i++)
+	for (int i = 0; i < 4; i++)
 	{
 		if (this->_materias[i] && this->_materias[i]->getType() == type)
 		{
@@ -105,3 +105,4 @@ AMateria *MateriaSource::createMateria(const std::string& type)
 	cout << "Materia of type " << type << " not found in source." << endl;
 	return NULL;
 }
+
